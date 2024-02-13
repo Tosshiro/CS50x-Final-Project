@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Set Budget
+{% endblock %}
+
+{% block main %}
+    <form action="/budget" method="post">
+        <h5 style = "line-height: 4;"> Please set/change your monthly budget amount.</h5>
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto inputdeco my-input" name="budget" placeholder="Enter Budget" type="text">
+        </div>
+
+        <button class="btn btn-primary buttondeco" type="submit">Submit</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <div class="mb-3">
+        <!-- Create a table showing user's previous expenditure amount, cause of expenditure, and date of expenditure-->
+        <table border="1" style = "margin: 0 auto; border-spacing: 20px; border-collapse: separate; border: 1px solid #000000;">
+            <thead>
+            <tr>
+                <th>Expenditure Amount</th>
+                <th>Cause of Expenditure</th>
+                <th>Date of Expenditure</th>
+            </tr>
+            </thead>
+            <tbody>
+                {% for expense in expenses %}
+                <tr>
+                    <td> {{expense.cost}} </td>
+                    <td> {{expense.reason}} </td>
+                    <td> {{expense.date}} </td>
+                </tr>
+                {% endfor %}
+        </table>
+    </div>
+    <!-- Display user's current budget -->
+    <div>
+        <h5> Current Budget Left: ${{budget}}</h5>
+    </div>
+{% endblock %}
