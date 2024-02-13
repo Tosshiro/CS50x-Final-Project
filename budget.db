@@ -1,0 +1,6 @@
+-- Add these following tables to budget.db
+
+CREATE TABLE users (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, username TEXT NOT NULL, hash TEXT NOT NULL, budget INT, const_budget INT);
+CREATE TABLE sqlite_sequence(name,seq);
+CREATE TABLE expenses ( id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER NOT NULL, expense NUMERIC NOT NULL, reason TEXT NOT NULL,
+date DATETIME DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY (user_id) REFERENCES users(id));
