@@ -42,3 +42,4 @@ A simple and easy Monthly Budget tracker for any users to use!
 - **app.py** contains most of the code and the logic. Such as bringing the user to apology.html when user inputs something wrong. It contains all the function and logic behind each HTML webpage.
 - **helpers.py** are several functions (EG: apology) imported into app.py. It also has a login_required function (Credits to CS50 finance) which allows only some webpages to be accessible only when user is logged in.
 
+![Savings](Savings.jpeg)
