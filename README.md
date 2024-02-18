@@ -43,11 +43,12 @@ A simple and easy Monthly Budget tracker for any users who wishes to save some m
 - User has to use sqlite3 and create the tables users and expenses himself (SQL code is inside budget.db)
 
 #### Python files
-- <u>**app.py**</u> contains most of the code and the logic. Such as bringing the user to apology.html when user inputs something wrong. It contains all the function and logic behind each HTML webpage.
+- **app.py** contains most of the code and the logic. Such as bringing the user to apology.html when user inputs something wrong. It contains all the function and logic behind each HTML webpage.
 - Most routes support GET and POST, where GET route is simply reached by clicking on the specific link, while POST route reached by submitting/entering some infomation.
 
 
-- <u>**helpers.py**</u> are several functions (EG: apology function) imported into app.py.
+
+- **helpers.py** are several functions (EG: apology function) imported into app.py.
 - It has a login_required function (Credits to CS50 finance) which allows only some webpages to be accessible only when user is logged in. This decorator ensures any user who tries to visit any of those routes to be redirected to login so as to log in.
 - It also contains an apology function which renders **apology.html** when user mis-inputs something.
 
